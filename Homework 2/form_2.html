@@ -11,9 +11,9 @@
         <fieldset>
             <legend>License details</legend>
             <ul>
-                <li>Email address <input type="text" name="e-mail" required></li>
+                <li>Email address <input type="email" name="e-mail" required></li>
                 <li>Website <input type="text" name="site" placeholder="http://www.example.com/" required></li>
-                <li>Number of licenses <input type="text" name="numlic" placeholder="How many to buy(1-10)" required></li>
+                <li>Number of licenses <input type="number" name="numlic" placeholder="How many to buy(1-10)" required></li>
             </ul>
         </fieldset>
         <fieldset>
@@ -29,7 +29,7 @@
                     <option value="ita">Italy</option>
                     <option selected value="cnd">Canada</option>
                   </select> </li>
-                  <li>Phone <i>(optional)</i> <input type="text" name="phone" placeholder="Include country prefix"></li>
+                  <li>Phone <i>(optional)</i> <input type="tel" name="phone" placeholder="Include country prefix"></li>
             </ul>
         </fieldset>
         <fieldset>
@@ -37,7 +37,7 @@
             <ul>
                 <li>Card number <input type="text" size="26" name = "card" placeholder="As shown on the front of your card." required></li>
                 <li>CVV code <input type="text" size="27" name = "cvv" placeholder="3-digit number on back of your card." required></li>
-                <li>Expiry date <input type="text" name = "expd" placeholder="YYYY-MM" required></li>
+                <li>Expiry date <input type="date" name = "expd" placeholder="YYYY-MM" required></li>
 
             </ul>
         </fieldset>
