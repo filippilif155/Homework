@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Zadatak 2</title>
+</head>
+<body>
+    <h1>Software Order Form</h1>
+    <form>
+        <fieldset>
+            <legend>License details</legend>
+            <ul>
+                <li>Email address <input type="text" name="e-mail" required></li>
+                <li>Website <input type="text" name="site" placeholder="http://www.example.com/" required></li>
+                <li>Number of licenses <input type="text" name="numlic" placeholder="How many to buy(1-10)" required></li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>Billing details</legend>
+            <ul>
+                <li>Name <input type="text" name="name" placeholder="First Last" required></li>
+                <li>Address <textarea name="address"cols="30" rows="5" placeholder="House number, &#10;street, city, state" required></textarea></li>
+                <li>Postal code <input type="text" name="pcode" placeholder="Post code or zip code" required></li>
+                <li>Country  <select name="country" required>
+                    <option value="aus">Australia</option>
+                    <option value="usa">USA</option>
+                    <option value="gb">GB</option>
+                    <option value="ita">Italy</option>
+                    <option selected value="cnd">Canada</option>
+                  </select> </li>
+                  <li>Phone <i>(optional)</i> <input type="text" name="phone" placeholder="Include country prefix"></li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>Payment details</legend>
+            <ul>
+                <li>Card number <input type="text" size="26" name = "card" placeholder="As shown on the front of your card." required></li>
+                <li>CVV code <input type="text" size="27" name = "cvv" placeholder="3-digit number on back of your card." required></li>
+                <li>Expiry date <input type="text" name = "expd" placeholder="YYYY-MM" required></li>
+
+            </ul>
+        </fieldset>
+        <input type="submit" value="Place Your Order" style="border-radius: 20px;">
+
+    </form>
+</body>
+</html>

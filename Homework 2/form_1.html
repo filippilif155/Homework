@@ -1,0 +1,58 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Zadatak 1</title>
+</head>
+<body>
+    <form height = "900" width = "400">
+        <table border="1">
+            <tr>
+                <td colspan="2" align="center">Pizza Shop 2.0</td>
+            </tr>
+            <tr>
+                <td>Name</td>
+                <td><input type="text" name = "name" maxlength="20" required></td>
+            </tr>
+            <tr>
+                <td>Pizza Topping</td>
+                <td>
+                    <input type="radio" name="opcija" value="Opcija 1" /> Supreme <br>
+                    <input type="radio" name="opcija" value="Opcija 2" /> Vegetarian <br>
+                    <input type="radio" name="opcija" value="Opcija 3" /> Hawaiian
+                </td>
+            </tr>
+            <tr>
+                <td>Pizza Sauce</td>
+                <td>
+                    <select name="sauce">
+                        <option value="mayo">Mayo</option>
+                        <option value="hot_sauce">Hot Sauce</option>
+                        <option value="garlic">Garlic</option>
+                        <option selected value="tomato">Tomato</option>
+                      </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Optional Extras</td>
+                <td>
+                    <input type="checkbox" name = "optional1" value = "cheese"> Extra Cheese <input type="checkbox" name = "optional2" value = "gluten"> Gluten Free Base
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">Delivery Instructions: <br> 
+                    <textarea maxlength = "100" rows="5" cols="50" required></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                <input type="submit" value = "Send my Order">
+                </td>
+            </tr>
+            
+        </table>
+       </form>
+       
+</body>
+</html>
